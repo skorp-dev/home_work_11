@@ -1,0 +1,49 @@
+.form {
+  border-radius: 15px;
+  background-color: #e1e1e1;
+  display: grid;
+  gap: 20px;
+  padding: 15px;
+  grid-template-areas:
+    "A B . . ."
+    "C C . . D";
+}
+
+.def {
+  color: rgb(172, 172, 172);
+}
+
+.days {
+  grid-area: A;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.prio {
+  grid-area: B;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form input {
+  grid-area: C;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+form input::placeholder {
+  color: black;
+}
+
+.form button {
+  grid-area: D;
+  padding: 5px;
+  border-radius: 15px;
+  border: 1px solid black;
+  background-color: #00bd7e;
+  color: white;
+  cursor: pointer;
+}
